@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bc1cjs1g40718" path="res://assets/kenney_prototype_textures/Vector/texture_02.svg" id="1_dfdqe"]
 
 [resource]
+resource_local_to_scene = true
 albedo_texture = ExtResource("1_dfdqe")
 uv1_offset = Vector3(0.5, 0.5, 0.5)
 uv1_triplanar = true
