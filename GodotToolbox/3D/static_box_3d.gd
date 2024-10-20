@@ -27,7 +27,7 @@ var _material_res : StandardMaterial3D:
 	get:
 		return _mesh_res.material
 
-var _color : Color = Color.GRAY
+var _color : Color = Color.WHITE
 @export var color : Color:
 	get:
 		return _color

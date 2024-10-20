@@ -1,21 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://bngpxqvfimlib"]
 
 [ext_resource type="Script" path="res://GodotToolbox/3D/static_box_3d.gd" id="1_tpebv"]
+[ext_resource type="Material" uid="uid://ebmjje14wx80" path="res://GodotToolbox/3D/triplanar_grid_3d.tres" id="2_juwi2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_x8sow"]
 resource_local_to_scene = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8b5j"]
-resource_local_to_scene = true
-
 [sub_resource type="BoxMesh" id="BoxMesh_tlho1"]
 resource_local_to_scene = true
-material = SubResource("StandardMaterial3D_c8b5j")
+material = ExtResource("2_juwi2")
 
 [node name="StaticBox3D" type="StaticBody3D"]
 script = ExtResource("1_tpebv")
 size = Vector3(1, 1, 1)
-color = null
+color = Color(1, 1, 1, 1)
 
 [node name="Collision" type="CollisionShape3D" parent="."]
 unique_name_in_owner = true
